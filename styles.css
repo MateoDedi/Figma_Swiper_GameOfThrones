@@ -14,15 +14,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .main {
     display: flex;
     flex-direction: row;
     max-width: 1110px;
-    margin: 11vh auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container-left {
@@ -77,6 +79,7 @@ h2 {
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0.05em;
+    margin-top: 10px;
 }
 
 h3 {

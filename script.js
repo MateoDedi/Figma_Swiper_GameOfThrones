@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const backgroundImages = {
             Stark: 'backgrounds/Stark.jpg',
             Lannister: 'backgrounds/lannister.jpg',
-            Targaryen: 'backgrounds/house targaryen.jpg',
+            Targaryen: 'backgrounds/Targaryen.jpg',
         };
     
         // Set the background image based on the house name
@@ -44,12 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
             background.backgroundRepeat = 'no-repeat';
             background.backgroundSize = 'cover';
             background.backgroundAttachment = 'fixed';
+            background.backgroundSize = '100% 100%';
         } else {
             // If the house name is not found, set the background to the default
             background.backgroundImage = 'url(backgrounds/game_of_thrones_hbo_world_map_by_crlyle_d4vvlyo.jpg)';
             background.backgroundRepeat = 'no-repeat';
             background.backgroundSize = 'cover';
             background.backgroundAttachment = 'fixed';
+            background.backgroundSize = '100% 100%';
         }
     }    
 });
