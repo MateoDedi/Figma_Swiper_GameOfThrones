@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Game of Thrones;
+    src: url(Font/Game\ of\ Thrones.ttf) format(truetype);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +10,10 @@
 }
 
 body {
-    background-color: rgb(65, 59, 59);
+    background-image: url(backgrounds/game_of_thrones_hbo_world_map_by_crlyle_d4vvlyo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .main {
@@ -13,9 +21,8 @@ body {
     flex-direction: row;
     max-width: 1110px;
     margin: 11vh auto;
-    place-content: center;
+    justify-content: center;
     align-items: center;
-    
 }
 
 .container-left {
@@ -27,16 +34,65 @@ body {
     max-width: 30vw;
 }
 
+.container-left,
+.container-right {
+    width: 39%; /* Set the width to 50% for both containers */
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
 .swiper-wrapper-right {
-    max-width: 30vw;
+    max-width: 100%; /* Ensure that the content within "container-right" does not exceed its container's width */
 }
 
 img:hover {
-    opacity: 0.4;
+    opacity: 1;
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
 }
 
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.4;
+}
+
+h2,
+h3 {
+    font-family: Game of Thrones;
+    font-weight: normal;
+}
+
+h2,
+h3,
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    color: #C92B2B;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
 }
